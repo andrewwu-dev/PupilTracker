@@ -37,7 +37,9 @@ class Camera():
     def read(self) :
         # Return a copy of current frame
         self.locker.acquire()
-        frame = self.frame.copy()
+        frame = self.frame.copy() 
+        # Convert to black and white
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         self.locker.release()
         return frame
 
