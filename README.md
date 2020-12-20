@@ -2,6 +2,8 @@
 Python script that tracks pupils by first extracting an eye frame and drawing a dot at the darkest point. 
 Also detects when eyes are closed.
 
+![pupilTracker.gif](pupilTracker.gif)
+
 ## Libraries Used
 - OpenCV
 - Dlib
